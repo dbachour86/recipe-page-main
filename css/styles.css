@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: hsl(24, 5%, 18%);
+  font-size: 16px;
+  font-family: "Young Serif", "Outfit", "sans-serif";
+}
+
+body {
+  background-color: hsl(30, 18%, 87%);
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 50%;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.1rem;
+}
+main .hero {
+  width: 100%;
+}
+main .hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1.1rem;
+}
+main .intro {
+  width: 100%;
+}
+main .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+main .intro p {
+  font-size: 0.8rem;
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit";
+  line-height: 1.5rem;
+  text-align: justify;
+}
+main .preparation-time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1.1rem;
+  padding-left: 1.5rem;
+}
+main .preparation-time h2 {
+  font-size: 1.5rem;
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit";
+  margin: 1rem 0;
+}
+main .preparation-time ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+main .preparation-time ul li {
+  margin-bottom: 1rem;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+main .preparation-time ul li span {
+  font-weight: 600;
+  font-family: "Outfit";
+  margin-left: 1.2rem;
+}
+main .ingredients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  border-bottom: 0.01rem solid hsl(30, 10%, 34%);
+}
+main .ingredients h2 {
+  font-size: 1.5rem;
+  color: hsl(332, 51%, 32%);
+  margin: 1rem 0;
+}
+main .ingredients ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  list-style: square;
+}
+main .ingredients ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.3rem;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+main .instructions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  border-bottom: 0.01rem solid hsl(30, 10%, 34%);
+}
+main .instructions h2 {
+  font-size: 1.5rem;
+  color: hsl(332, 51%, 32%);
+  margin: 1rem 0;
+}
+main .instructions ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  list-style: decimal;
+}
+main .instructions ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.3rem;
+  font-family: "Outfit";
+  font-weight: 300;
+}
+main .instructions ul li span {
+  font-family: "Outfit";
+  font-weight: 600;
+}
+main .nutrition {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+}
+main .nutrition h2 {
+  font-size: 1.5rem;
+  color: hsl(332, 51%, 32%);
+  margin: 1rem 0;
+}
+main .nutrition p {
+  font-family: "Outfit";
+  margin-bottom: 1.2rem;
+}
+main .nutrition table {
+  border-collapse: collapse;
+}
+main .nutrition table tr {
+  border-bottom: 1px solid hsl(30, 10%, 34%);
+  height: 3rem;
+}
+main .nutrition table tr td {
+  font-family: "Outfit";
+}
+main .nutrition table tr :nth-child(even) {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+@media only screen and (max-width: 796px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  main .hero img {
+    border-radius: 0;
+  }
+  main .intro,
+  main .preparation-time,
+  main .ingredients,
+  main .instructions,
+  main .nutrition {
+    padding: 0;
+    width: auto;
+  }
+  main section {
+    margin: 0 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

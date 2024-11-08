@@ -1,0 +1,204 @@
+$white: hsl(0, 0%, 100%);
+
+$stone-100: hsl(30, 54%, 90%);
+$stone-150: hsl(30, 18%, 87%);
+$stone-600: hsl(30, 10%, 34%);
+$stone-900: hsl(24, 5%, 18%);
+
+$brown-800: hsl(14, 45%, 36%);
+
+$rose-800: hsl(332, 51%, 32%);
+$rose-50: hsl(330, 100%, 98%);
+
+$young-serif: "Young Serif";
+$outfit: "Outfit";
+
+@mixin border {
+  border-radius: 1.1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $stone-900;
+  font-size: 16px;
+  font-family: $young-serif, $outfit, "sans-serif";
+}
+
+body {
+  background-color: $stone-150;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 50%;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: $white;
+  @include border();
+
+  .hero {
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      @include border();
+    }
+  }
+
+  .intro {
+    width: 100%;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: $stone-600;
+      font-family: $outfit;
+      line-height: 1.5rem;
+      text-align: justify;
+    }
+  }
+
+  .preparation-time {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $rose-50;
+    @include border();
+    padding-left: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+      color: $rose-800;
+      font-family: $outfit;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+
+      li {
+        margin-bottom: 1rem;
+        font-family: $outfit;
+        font-weight: 300;
+
+        span {
+          font-weight: 600;
+          font-family: $outfit;
+          margin-left: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .ingredients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    border-bottom: 0.01rem solid $stone-600;
+
+    h2 {
+      font-size: 1.5rem;
+      color: $rose-800;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      list-style: square;
+
+      li {
+        margin-bottom: 1rem;
+        padding-left: 1.3rem;
+        font-family: $outfit;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .instructions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    border-bottom: 0.01rem solid $stone-600;
+
+    h2 {
+      font-size: 1.5rem;
+      color: $rose-800;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      list-style: decimal;
+
+      li {
+        margin-bottom: 1rem;
+        padding-left: 1.3rem;
+        font-family: $outfit;
+        font-weight: 300;
+
+        span {
+          font-family: $outfit;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .nutrition {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+      color: $rose-800;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-family: $outfit;
+      margin-bottom: 1.2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 1px solid $stone-600;
+        height: 3rem;
+
+        td {
+          font-family: $outfit;
+        }
+
+        :nth-child(even) {
+          font-weight: 600;
+          color: $brown-800;
+        }
+      }
+    }
+  }
+}
